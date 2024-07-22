@@ -1,0 +1,16 @@
+---
+label: "MatterLightOverThreadSolution_test"
+quality: "production"
+description: "Matter workspace container both a Matter bootloader and Lighting over\
+  \ Thread Example"
+project:
+- id: "application"
+  path: "MatterLightOverThread_test.slcp"
+  output: "."
+- id: "bootloader"
+  path: "..\\Matter-Bootloader_test\\Matter-Bootloader_test.slcp"
+  output: "../Matter-Bootloader_test"
+post_build:
+  profile: ""
+  path: "..\\..\\SDKs\\simplicity_sdk\\extension\\matter_extension\\slc\\postbuild\\\
+    ws_default_application_bootloader.slpb"

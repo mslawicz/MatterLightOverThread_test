@@ -1,0 +1,16 @@
+---
+parameters: []
+constants:
+- name: "workspace_name"
+  value: "MatterLightOverThreadSolution_test"
+- path: "MatterLightOverThread_test.slpb"
+- path: "../Matter-Bootloader_test/Matter-Bootloader_test.slpb"
+steps:
+- task: "convert"
+  output: "artifact/{{workspace_name}}-full.s37"
+  input:
+  - "{{bootloader_binary}}"
+  - "{{application_binary}}"
+- task: "create_gbl"
+  output: "artifact/{{workspace_name}}-app-only.gbl"
+  app: "{{application_binary}}"
