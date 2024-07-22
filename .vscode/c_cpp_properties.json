@@ -2,9 +2,7 @@
     "configurations": [
         {
             "name": "MatterLightOverThread_test",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
+            "configurationProvider": "ms-vscode.cmake-tools",
             "defines": [],
             "compilerPath": ""
         }
