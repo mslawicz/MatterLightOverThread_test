@@ -21,6 +21,7 @@
 #include "sl_system_kernel.h"
 #include <MatterConfig.h>
 #include "cmsis_os2.h"
+#include "sl_simple_led_instances.h"
 
 constexpr uint32_t myTaskStackSize = 1024;
 // Task is dynamically allocated with max priority. This task gets deleted once the inits are completed.
@@ -49,6 +50,7 @@ void myApplicationStart(void * unused)
 {
     while(1)
     {
+        sl_simple_led_toggle(sl_led_led0.context);
         osDelay(500);
     }
 }
