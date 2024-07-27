@@ -1,6 +1,6 @@
 /***************************************************************************//**
  * @file
- * @brief LED Driver Instances
+ * @brief Simple Led Driver Configuration
  *******************************************************************************
  * # License
  * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
@@ -28,53 +28,30 @@
  *
  ******************************************************************************/
 
-#include "sl_simple_led.h"
+#ifndef SL_SIMPLE_LED_TEST1_CONFIG_H
+#define SL_SIMPLE_LED_TEST1_CONFIG_H
 
-#if defined(SL_CATALOG_GPIO_PRESENT)
-#include "sl_gpio.h"
-#else
-#include "em_gpio.h"
-#endif
+// <<< Use Configuration Wizard in Context Menu >>>
 
-#include "sl_simple_led_led0_config.h"
-#include "sl_simple_led_test1_config.h"
+// <h> Simple LED configuration
+// <o SL_SIMPLE_LED_TEST1_POLARITY>
+// <SL_SIMPLE_LED_POLARITY_ACTIVE_LOW=> Active low
+// <SL_SIMPLE_LED_POLARITY_ACTIVE_HIGH=> Active high
+// <i> Default: SL_SIMPLE_LED_POLARITY_ACTIVE_HIGH
+#define SL_SIMPLE_LED_TEST1_POLARITY SL_SIMPLE_LED_POLARITY_ACTIVE_HIGH
+// </h> end led configuration
 
-sl_simple_led_context_t simple_led0_context = {
-  .port = SL_SIMPLE_LED_LED0_PORT,
-  .pin = SL_SIMPLE_LED_LED0_PIN,
-  .polarity = SL_SIMPLE_LED_LED0_POLARITY,
-};
+// <<< end of configuration section >>>
 
-const sl_led_t sl_led_led0 = {
-  .context = &simple_led0_context,
-  .init = sl_simple_led_init,
-  .turn_on = sl_simple_led_turn_on,
-  .turn_off = sl_simple_led_turn_off,
-  .toggle = sl_simple_led_toggle,
-  .get_state = sl_simple_led_get_state,
-};
-sl_simple_led_context_t simple_test1_context = {
-  .port = SL_SIMPLE_LED_TEST1_PORT,
-  .pin = SL_SIMPLE_LED_TEST1_PIN,
-  .polarity = SL_SIMPLE_LED_TEST1_POLARITY,
-};
+// <<< sl:start pin_tool >>>
 
-const sl_led_t sl_led_test1 = {
-  .context = &simple_test1_context,
-  .init = sl_simple_led_init,
-  .turn_on = sl_simple_led_turn_on,
-  .turn_off = sl_simple_led_turn_off,
-  .toggle = sl_simple_led_toggle,
-  .get_state = sl_simple_led_get_state,
-};
+// <gpio> SL_SIMPLE_LED_TEST1
+// $[GPIO_SL_SIMPLE_LED_TEST1]
+#warning "Simple LED Driver GPIO pin not configured"
+// #define SL_SIMPLE_LED_TEST1_PORT            gpioPortA
+// #define SL_SIMPLE_LED_TEST1_PIN             1
+// [GPIO_SL_SIMPLE_LED_TEST1]$
 
-const sl_led_t *sl_simple_led_array[] = {
-  &sl_led_led0,
-  &sl_led_test1
-};
+// <<< sl:end pin_tool >>>
 
-void sl_simple_led_init_instances(void)
-{
-  sl_led_init(&sl_led_led0);
-  sl_led_init(&sl_led_test1);
-}
+#endif // SL_SIMPLE_LED_TEST1_CONFIG_H
