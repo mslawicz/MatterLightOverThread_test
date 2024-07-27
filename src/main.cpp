@@ -50,7 +50,7 @@ void myApplicationStart(void * unused)
 {
     while(1)
     {
-        sl_simple_led_toggle(sl_led_led0.context);
+        sl_simple_led_toggle(sl_led_test1.context);
         osDelay(500);
     }
 }
