@@ -47,11 +47,11 @@
 
 // <gpio> SL_SIMPLE_LED_TEST1
 // $[GPIO_SL_SIMPLE_LED_TEST1]
-#ifndef SL_SIMPLE_LED_TEST1_PORT                 
-#define SL_SIMPLE_LED_TEST1_PORT                  gpioPortD
+#ifndef SL_SIMPLE_LED_TEST1_PORT                
+#define SL_SIMPLE_LED_TEST1_PORT                 gpioPortD
 #endif
-#ifndef SL_SIMPLE_LED_TEST1_PIN                  
-#define SL_SIMPLE_LED_TEST1_PIN                   0
+#ifndef SL_SIMPLE_LED_TEST1_PIN                 
+#define SL_SIMPLE_LED_TEST1_PIN                  0
 #endif
 // [GPIO_SL_SIMPLE_LED_TEST1]$
 

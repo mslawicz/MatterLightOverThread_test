@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
   <descriptors name="MatterLightOverThread_test">
-    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.sisdk:2024.6.0._1161586746"/>
+    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.sisdk:2024.6.0._-405689156"/>
     <properties key="universalConfig.relativeWorkspacePath" value="..\MatterLightOverThreadSolution_test.slcw"/>
     <properties key="universalConfig.generationDirectory" value=""/>
     <properties key="universalConfig.toolchainCompatibility" value="gcc"/>
