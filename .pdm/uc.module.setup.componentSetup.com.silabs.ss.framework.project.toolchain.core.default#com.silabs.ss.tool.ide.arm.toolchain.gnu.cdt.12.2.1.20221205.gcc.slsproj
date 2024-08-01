@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="uc.module.setup.componentSetup.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:12.2.1.20221205.gcc" propertyScope="project">
   <folder name="src">
-    <file name="AppTask.cpp" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/src/AppTask.cpp"/>
-    <file name="LightingManager.cpp" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/src/LightingManager.cpp"/>
-    <file name="main.cpp" linked="false" uri="studio:/sdk/extension/matter_extension/examples/platform/silabs/main.cpp"/>
-    <file name="ZclCallbacks.cpp" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/src/ZclCallbacks.cpp"/>
+    <file name="AppTask.cpp" linked="false" uri="studio:/project/src/AppTask.cpp"/>
+    <file name="LightingManager.cpp" linked="false" uri="studio:/project/src/LightingManager.cpp"/>
+    <file name="main.cpp" linked="false" uri="studio:/project/src/main.cpp"/>
+    <file name="ZclCallbacks.cpp" linked="false" uri="studio:/project/src/ZclCallbacks.cpp"/>
   </folder>
   <folder name="include">
-    <file name="AppConfig.h" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/include/AppConfig.h"/>
-    <file name="AppEvent.h" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/include/AppEvent.h"/>
-    <file name="AppTask.h" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/include/AppTask.h"/>
-    <file name="CHIPProjectConfig.h" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/include/CHIPProjectConfig.h"/>
-    <file name="LightingManager.h" linked="false" uri="studio:/sdk/extension/matter_extension/examples/lighting-app/silabs/include/LightingManager.h"/>
+    <file name="AppConfig.h" linked="false" uri="studio:/project/include/AppConfig.h"/>
+    <file name="AppEvent.h" linked="false" uri="studio:/project/include/AppEvent.h"/>
+    <file name="AppTask.h" linked="false" uri="studio:/project/include/AppTask.h"/>
+    <file name="CHIPProjectConfig.h" linked="false" uri="studio:/project/include/CHIPProjectConfig.h"/>
+    <file name="LightingManager.h" linked="false" uri="studio:/project/include/LightingManager.h"/>
   </folder>
   <folder name="matter_2.3.0">
     <folder name="src">
@@ -3101,7 +3101,7 @@
       </folder>
     </folder>
   </folder>
-  <file name="README.md" linked="false" uri="studio:/sdk/extension/matter_extension/slc/sample-app/lighting-app/efr32/README.md"/>
+  <file name="README.md" linked="false" uri="studio:/project/README.md"/>
   <includePath uri="studio:/project/include"/>
   <includePath uri="studio:/sdk/extension/matter_extension/examples/platform/silabs"/>
   <includePath uri="studio:/sdk/extension/matter_extension/src"/>

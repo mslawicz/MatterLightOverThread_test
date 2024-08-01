@@ -9,7 +9,7 @@
     <properties key="projectCommon.boardIds" value="brd2704a:0.0.0.A00"/>
     <properties key="projectCommon.kitId" value=""/>
     <properties key="projectCommon.partId" value="mcu.arm.efr32.mg24.mgm240pb32vna"/>
-    <properties key="universalConfig.projectTypeIds" value="visual-studio-code"/>
+    <properties key="universalConfig.projectTypeIds" value="visual-studio-code com.silabs.ss.framework.ide.project.core.cdtMbsProjectType"/>
     <properties key="projectCommon.importModeId" value="LINK_LIBRARIES"/>
     <properties key="universalConfig.compSelProjInstanceId" value="1721639303878"/>
   </descriptors>
