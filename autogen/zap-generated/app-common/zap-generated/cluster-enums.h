@@ -267,6 +267,7 @@ kUnknownEnumValue = 8,
 
 
 
+
 // Enum for OperationalStateEnum
 enum class OperationalStateEnum : uint8_t {
 kStopped = 0x00,
@@ -279,7 +280,6 @@ kError = 0x03,
 // enum value. This specific should never be transmitted.
 kUnknownEnumValue = 4,
 };
-
 
 
 
